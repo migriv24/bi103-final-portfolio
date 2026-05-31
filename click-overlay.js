@@ -31,9 +31,17 @@
       display: block;
       cursor: grab;
       filter: drop-shadow(0 6px 14px rgba(0,0,0,.2));
-      transition: filter .25s ease, opacity .25s ease;
+      transition: filter .22s ease, transform .22s ease, opacity .25s ease;
     }
     #ck-sprite:active { cursor: grabbing; }
+    #ck-root.ck-dragging #ck-sprite {
+      filter: drop-shadow(0 22px 32px rgba(0,0,0,.55)) drop-shadow(0 6px 12px rgba(0,0,0,.3));
+      transform: scale(1.14);
+      cursor: grabbing;
+    }
+    #ck-root.ck-dragging.ck-portal #ck-sprite {
+      filter: drop-shadow(0 22px 32px rgba(0,0,0,.55)) drop-shadow(0 6px 12px rgba(0,0,0,.3)) drop-shadow(0 0 24px rgba(77,150,255,.9));
+    }
     #ck-bubble {
       display: none;
       position: absolute;
@@ -91,10 +99,21 @@
       border-radius: 8px;
       pointer-events: none;
     }
-    #ck-root.ck-portal #ck-sprite {
-      filter: drop-shadow(0 0 16px rgba(77,150,255,.8)) drop-shadow(0 6px 14px rgba(0,0,0,.2));
-    }
     #ck-root.ck-portal #ck-hint { display: block; }
+    #ck-drag-hint {
+      position: absolute;
+      top: calc(100% + 3px);
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+      font-family: 'Nunito',system-ui,sans-serif;
+      font-size: 9px;
+      font-weight: 600;
+      color: rgba(30,58,82,.38);
+      pointer-events: none;
+      user-select: none;
+    }
+    #ck-root.ck-dragging #ck-drag-hint { display: none; }
     @keyframes ck-in {
       from { opacity:0; transform:scale(.85) translateY(6px); }
       to   { opacity:1; transform:scale(1) translateY(0); }
@@ -117,6 +136,7 @@
     </div>
     <div id="ck-hint">back to portfolio</div>
     <img id="ck-sprite" alt="Click LaFont" />
+    ${cfg.noPortal ? '' : '<p id="ck-drag-hint">try dragging to the center</p>'}
   `;
   document.body.appendChild(root);
 
@@ -244,7 +264,7 @@
     root.style.top  = y + 'px';
 
     // Portal zone = outside bottom-left quadrant
-    const inSafe = x < window.innerWidth * 0.5 && (y + SIZE) > window.innerHeight * 0.45;
+    const inSafe = (x + SIZE / 2) < window.innerWidth * 0.28 && (y + SIZE / 2) > window.innerHeight * 0.72;
     root.classList.toggle('ck-portal', !inSafe && !cfg.noPortal);
   }
 
@@ -257,7 +277,7 @@
 
     const x = clientX - offX;
     const y = clientY - offY;
-    const inSafe = x < window.innerWidth * 0.5 && (y + SIZE) > window.innerHeight * 0.45;
+    const inSafe = (x + SIZE / 2) < window.innerWidth * 0.28 && (y + SIZE / 2) > window.innerHeight * 0.72;
 
     if (!inSafe && !cfg.noPortal) {
       // Portal back to portfolio
@@ -294,6 +314,22 @@
     const t = e.changedTouches[0];
     endDrag(t.clientX, t.clientY);
   });
+
+  // ── Shift above mobile panel when it opens ───────────────────
+  const mobilePanel = document.getElementById('mobilePanel');
+  if (mobilePanel) {
+    const CORNER_BOTTOM = window.matchMedia('(max-width:500px)').matches ? 10 : 16;
+    new MutationObserver(() => {
+      if (isDragging) return;
+      if (mobilePanel.classList.contains('open')) {
+        root.style.transition = 'bottom .3s ease';
+        root.style.bottom = (mobilePanel.offsetHeight + 14) + 'px';
+      } else {
+        root.style.transition = 'bottom .3s ease';
+        root.style.bottom = CORNER_BOTTOM + 'px';
+      }
+    }).observe(mobilePanel, { attributes: true, attributeFilter: ['class'] });
+  }
 
   // ── Portal entry animation (arriving from a lab page) ────────
   if (cfg.portalEntry) {
