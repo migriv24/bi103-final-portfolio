@@ -48,12 +48,14 @@
   window.CLICK_CONFIG = {
     alwaysShow: true,
     setActive: true,
+    noPortal: true,
+    portalEntry: new URLSearchParams(window.location.search).get('from') === 'portal',
     idleSprite: 'Neutral_LookingTopRight_NoAction',
     dialogues: [
       {
         trigger: 'enter',
         sprite: 'Happy_LookingRight_Gesture',
-        text: 'Oh, hey! I\'m Click. I\'ll be around while you check out these biology labs. Go ahead and click any bubble to get started.'
+        text: 'Nine biology labs, nine learning outcomes. I will be in each one pointing out how the content connects to its outcome. Go ahead and click any bubble to get started.'
       }
     ]
   };
