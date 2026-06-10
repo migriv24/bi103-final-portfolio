@@ -7,8 +7,9 @@ one lives and whether it is wired into the hub yet.
 - **Hub repo (this folder):** `C:\Users\migri\Documents\GitHub\bi103-final-portfolio`
 - **Hub live URL:** https://migriv24.github.io/bi103-final-portfolio/
 - **Wiring lives in:** `src/data.js` (each slot has a `url` and a `placeholder` flag)
+- **Deploy:** `npm run deploy` (Vite build to the `gh-pages` branch)
 
-Last checked: 2026-06-07. All eight built sites returned HTTP 200.
+Last updated: 2026-06-07. All eight built sites returned HTTP 200.
 
 ---
 
@@ -22,11 +23,11 @@ Last checked: 2026-06-07. All eight built sites returned HTTP 200.
 | 4 | Biology | `biology-concepts` | Immune Lab | ✅ | ✅ linked |
 | 5 | Biology | `biology-skills` | Skeletal & Muscular Lab | ✅ | ✅ linked |
 | 6 | Biology | `biology-connections` | Digestive System Ranger | ✅ | ✅ linked |
-| 7 | Human | `human-concepts` | Infectious Diseases Lab | ✅ | ⛔ **not linked yet** |
+| 7 | Human | `human-concepts` | Infectious Diseases Lab | ✅ | ✅ linked |
 | 8 | Human | `human-skills` | Data Management Lab | ✅ | ✅ linked |
-| 9 | Human | `human-connections` | Body Data Visualization | ✅ | ⛔ **not linked yet** |
+| 9 | Human | `human-connections` | Body Data Visualization | ✅ | ✅ linked |
 
-**Connected: 6 · Built but not yet connected: 2 · Not built: 1**
+**Connected: 8 · Not built: 1 (`science-skills`)**
 
 ---
 
@@ -43,7 +44,7 @@ Last checked: 2026-06-07. All eight built sites returned HTTP 200.
 **2. Experimental Design Media** — `science-skills`
 - Local: _none yet (not built)_
 - Live: _none_
-- Status: **placeholder** (`url: '#'`, `placeholder: true`). This is the one outcome with no site. The hub caption describes a "biohacking experiment designed from scratch."
+- Status: **placeholder** (`url: '#'`, `placeholder: true`). The only outcome with no site. The hub caption describes a "biohacking experiment designed from scratch."
 
 **3. Disease Literacy Lab** — `science-connections`
 - Local: `C:\Users\migri\Documents\bi103-disease-lab`
@@ -77,8 +78,7 @@ Last checked: 2026-06-07. All eight built sites returned HTTP 200.
 - Local: `C:\Users\migri\Documents\OSU\BI 103\SkeletalSystem_MediaLab\infectious-diseases-2026`
 - Repo: `migriv24/bi103-infectious-disease-lab`
 - Live: https://migriv24.github.io/bi103-infectious-disease-lab/
-- Status: **built and live, but NOT linked in the hub yet** (slot still `url: '#'`, `placeholder: true`).
-- Note: the existing hub caption for this slot describes epidemiology / R0 / herd immunity, which does not match the actual site (a malaria + tuberculosis parasite-vs-pathogen piece). The caption should be rewritten when connecting.
+- Status: **linked in hub** (connected 2026-06-07; caption rewritten to match the malaria + TB piece).
 
 **8. Data Management Lab** — `human-skills`
 - Local: `C:\Users\migri\Documents\bi103-datamgmt-lab`
@@ -90,15 +90,13 @@ Last checked: 2026-06-07. All eight built sites returned HTTP 200.
 - Local: `C:\Users\migri\Documents\OSU\BI 103\SkeletalSystem_MediaLab\body-effort-map`
 - Repo: `migriv24/bi103-bodyviz-lab`
 - Live: https://migriv24.github.io/bi103-bodyviz-lab/
-- Status: **built and live, but NOT linked in the hub yet** (slot still `url: '#'`, `placeholder: true`).
-- Includes a helper tool at `/tools/region-tagger.html`.
+- Status: **linked in hub** (connected 2026-06-07). Includes a helper tool at `/tools/region-tagger.html`.
 
 ---
 
 ## What is left
 
-1. **Connect Infectious Diseases Lab** (`human-concepts`): flip `placeholder` to `false`, set `url` to the live link, and rewrite the caption to match the malaria + TB piece.
-2. **Connect Body Data Visualization** (`human-connections`): flip `placeholder` to `false`, set `url` to the live link. The existing caption already fits this site well.
-3. **Experimental Design Media** (`science-skills`): the only outcome with no site built. Either build it or leave it as a "coming soon" placeholder.
+1. **Experimental Design Media** (`science-skills`): the only outcome with no site built. Either build it or leave it as the styled "coming soon" placeholder it currently is.
 
-After editing `src/data.js`, rebuild/redeploy the hub for the changes to go live.
+Everything else is built, live, and linked. After editing `src/data.js`, run `npm run deploy`
+to rebuild and push the hub to the `gh-pages` branch.
