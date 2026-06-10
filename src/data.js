@@ -39,7 +39,7 @@ export const SECTIONS = [
       <circle cx="54" cy="47" r="3" fill="currentColor" opacity="0.45"/>
       <circle cx="46" cy="57" r="3.5" fill="currentColor" opacity="0.5"/>
     </svg>`,
-    caption: 'Science skills are the process behind discovery. This piece designs an experiment from scratch, asking whether two strength sessions a week can make my easy runs faster, and makes the hypothesis, variables, controls, and protocol explicit. It is a study designed, not run.',
+    caption: 'Science skills are the process behind discovery. This piece designs an experiment from scratch, asking whether resistance training makes runners faster, then leans on a literature review to show why even a huge, deliberately unrealistic study would struggle to answer it. A study designed, not run.',
   },
   {
     id: 'science-connections',
