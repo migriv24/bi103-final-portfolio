@@ -28,8 +28,8 @@ export const SECTIONS = [
     outcome: 'Science Skills',
     group: 'science',
     title: 'Experimental Design Media',
-    url: '#',
-    placeholder: true,
+    url: 'https://migriv24.github.io/bi103-experiment-lab/',
+    placeholder: false,
     accent: '#4d96ff',
     previewBg: 'linear-gradient(135deg, #20205a 0%, #2a2a70 100%)',
     svg: `<svg viewBox="0 0 100 70" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -39,7 +39,7 @@ export const SECTIONS = [
       <circle cx="54" cy="47" r="3" fill="currentColor" opacity="0.45"/>
       <circle cx="46" cy="57" r="3.5" fill="currentColor" opacity="0.5"/>
     </svg>`,
-    caption: 'Science skills are the process behind discovery. This media piece designs a biohacking experiment from scratch, making the steps of hypothesis formation, variable selection, and protocol design explicit and applicable.',
+    caption: 'Science skills are the process behind discovery. This piece designs an experiment from scratch, asking whether two strength sessions a week can make my easy runs faster, and makes the hypothesis, variables, controls, and protocol explicit. It is a study designed, not run.',
   },
   {
     id: 'science-connections',
