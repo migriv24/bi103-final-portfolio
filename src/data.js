@@ -6,8 +6,8 @@ export const SECTIONS = [
     title: 'Nervous System Lab',
     url: 'https://migriv24.github.io/bi103-nervous-lab/',
     placeholder: false,
-    accent: '#4ECDC4',
-    previewBg: 'linear-gradient(135deg, #0a1e2e 0%, #0d2840 100%)',
+    accent: '#4d96ff',
+    previewBg: 'linear-gradient(135deg, #1a2e50 0%, #2a4070 100%)',
     svg: `<svg viewBox="0 0 100 70" fill="none" xmlns="http://www.w3.org/2000/svg">
       <circle cx="50" cy="35" r="9" fill="currentColor" opacity="0.9"/>
       <line x1="50" y1="35" x2="78" y2="16" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
@@ -30,8 +30,8 @@ export const SECTIONS = [
     title: 'Experimental Design Media',
     url: '#',
     placeholder: true,
-    accent: '#4ECDC4',
-    previewBg: 'linear-gradient(135deg, #141030 0%, #1a1442 100%)',
+    accent: '#4d96ff',
+    previewBg: 'linear-gradient(135deg, #20205a 0%, #2a2a70 100%)',
     svg: `<svg viewBox="0 0 100 70" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M42 8 L42 34 L21 62 L79 62 L58 34 L58 8 Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" fill="currentColor" fill-opacity="0.1" opacity="0.85"/>
       <line x1="37" y1="8" x2="63" y2="8" stroke="currentColor" stroke-width="2.5" opacity="0.9"/>
@@ -48,8 +48,8 @@ export const SECTIONS = [
     title: 'Disease Literacy Lab',
     url: 'https://migriv24.github.io/bi103-disease-lab/',
     placeholder: false,
-    accent: '#4ECDC4',
-    previewBg: 'linear-gradient(135deg, #1f0a0a 0%, #320f0f 100%)',
+    accent: '#4d96ff',
+    previewBg: 'linear-gradient(135deg, #3a1020 0%, #501828 100%)',
     svg: `<svg viewBox="0 0 100 70" fill="none" xmlns="http://www.w3.org/2000/svg">
       <circle cx="50" cy="35" r="22" stroke="currentColor" stroke-width="2" opacity="0.75"/>
       <circle cx="50" cy="35" r="13" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
@@ -67,8 +67,8 @@ export const SECTIONS = [
     title: 'Immune Lab',
     url: 'https://migriv24.github.io/bi103-immune-lab/',
     placeholder: false,
-    accent: '#56CF8E',
-    previewBg: 'linear-gradient(135deg, #0a1f12 0%, #0d2a1a 100%)',
+    accent: '#6bcb77',
+    previewBg: 'linear-gradient(135deg, #1a3a20 0%, #285030 100%)',
     svg: `<svg viewBox="0 0 100 70" fill="none" xmlns="http://www.w3.org/2000/svg">
       <line x1="50" y1="62" x2="50" y2="40" stroke="currentColor" stroke-width="3" stroke-linecap="round" opacity="0.9"/>
       <line x1="50" y1="40" x2="30" y2="18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
@@ -89,8 +89,8 @@ export const SECTIONS = [
     title: 'Skeletal and Muscular Lab',
     url: 'https://migriv24.github.io/bi103-movement-lab/',
     placeholder: false,
-    accent: '#56CF8E',
-    previewBg: 'linear-gradient(135deg, #1a1500 0%, #2a2200 100%)',
+    accent: '#6bcb77',
+    previewBg: 'linear-gradient(135deg, #302800 0%, #483c00 100%)',
     svg: `<svg viewBox="0 0 100 70" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect x="44" y="10" width="12" height="50" rx="6" fill="currentColor" opacity="0.85"/>
       <ellipse cx="50" cy="11" rx="13" ry="10" fill="currentColor" opacity="0.9"/>
@@ -107,8 +107,8 @@ export const SECTIONS = [
     title: 'Digestive System Ranger',
     url: 'https://migriv24.github.io/digestive-system-ranger/',
     placeholder: false,
-    accent: '#56CF8E',
-    previewBg: 'linear-gradient(135deg, #0d1a0a 0%, #142810 100%)',
+    accent: '#6bcb77',
+    previewBg: 'linear-gradient(135deg, #1a3020 0%, #204020 100%)',
     svg: `<svg viewBox="0 0 100 70" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect x="44" y="8"  width="12" height="12" rx="1" fill="currentColor" opacity="0.9"/>
       <rect x="40" y="20" width="20" height="16" rx="1" fill="currentColor" opacity="0.9"/>
@@ -126,10 +126,10 @@ export const SECTIONS = [
     outcome: 'Human Biology Concepts',
     group: 'human',
     title: 'Infectious Diseases Lab',
-    url: '#',
-    placeholder: true,
-    accent: '#FF6B9D',
-    previewBg: 'linear-gradient(135deg, #1f0a10 0%, #320a18 100%)',
+    url: 'https://migriv24.github.io/bi103-infectious-disease-lab/',
+    placeholder: false,
+    accent: '#ff6b6b',
+    previewBg: 'linear-gradient(135deg, #4a1010 0%, #601818 100%)',
     svg: `<svg viewBox="0 0 100 70" fill="none" xmlns="http://www.w3.org/2000/svg">
       <circle cx="50" cy="35" r="8"  fill="currentColor" opacity="0.9"/>
       <circle cx="22" cy="18" r="5"  fill="currentColor" opacity="0.7"/>
@@ -145,7 +145,7 @@ export const SECTIONS = [
       <circle cx="6"  cy="62" r="3" fill="currentColor" opacity="0.4"/>
       <circle cx="94" cy="62" r="3" fill="currentColor" opacity="0.4"/>
     </svg>`,
-    caption: 'Human populations are biological systems too. This lab models infectious disease spread using epidemiological frameworks, exploring transmission rate, R₀, and herd immunity to understand how our species responds to biological threats at scale.',
+    caption: 'Some diseases never left, even as the world moved on. This piece documents two of them as they stand in 2026, a parasite (malaria) and a pathogen (tuberculosis), tracing how each one spreads, what it does to the body, and where prevention and treatment stand. It turns the biology of infection into a field dossier on living alongside disease.',
   },
   {
     id: 'human-skills',
@@ -154,8 +154,8 @@ export const SECTIONS = [
     title: 'Data Management Lab',
     url: 'https://migriv24.github.io/bi103-datamgmt-lab/',
     placeholder: false,
-    accent: '#FF6B9D',
-    previewBg: 'linear-gradient(135deg, #1a0a20 0%, #280a30 100%)',
+    accent: '#ff6b6b',
+    previewBg: 'linear-gradient(135deg, #2a1050 0%, #381860 100%)',
     svg: `<svg viewBox="0 0 100 70" fill="none" xmlns="http://www.w3.org/2000/svg">
       <line x1="13" y1="64" x2="90" y2="64" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
       <line x1="13" y1="10" x2="13" y2="64" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
@@ -171,10 +171,10 @@ export const SECTIONS = [
     outcome: 'Human Connections',
     group: 'human',
     title: 'Body Data Visualization',
-    url: '#',
-    placeholder: true,
-    accent: '#FF6B9D',
-    previewBg: 'linear-gradient(135deg, #0a141e 0%, #0d1e2c 100%)',
+    url: 'https://migriv24.github.io/bi103-bodyviz-lab/',
+    placeholder: false,
+    accent: '#ff6b6b',
+    previewBg: 'linear-gradient(135deg, #1a2040 0%, #20284e 100%)',
     svg: `<svg viewBox="0 0 100 70" fill="none" xmlns="http://www.w3.org/2000/svg">
       <polyline points="8,58 22,42 38,50 54,26 70,34 90,18" stroke="currentColor" stroke-width="2.5" fill="none" opacity="0.9" stroke-linecap="round" stroke-linejoin="round"/>
       <polyline points="8,64 28,54 46,60 62,46 78,52 90,40" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.45" stroke-linecap="round" stroke-linejoin="round"/>
