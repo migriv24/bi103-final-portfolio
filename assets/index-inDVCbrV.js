@@ -16,7 +16,7 @@
       <circle cx="38" cy="52" r="4" fill="currentColor" opacity="0.55"/>
       <circle cx="54" cy="47" r="3" fill="currentColor" opacity="0.45"/>
       <circle cx="46" cy="57" r="3.5" fill="currentColor" opacity="0.5"/>
-    </svg>`,caption:`Science skills are the process behind discovery. This piece designs an experiment from scratch, asking whether two strength sessions a week can make my easy runs faster, and makes the hypothesis, variables, controls, and protocol explicit. It is a study designed, not run.`},{id:`science-connections`,outcome:`Science Connections`,group:`science`,title:`Disease Literacy Lab`,url:`https://migriv24.github.io/bi103-disease-lab/`,placeholder:!1,accent:`#4d96ff`,previewBg:`linear-gradient(135deg, #3a1020 0%, #501828 100%)`,svg:`<svg viewBox="0 0 100 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+    </svg>`,caption:`Science skills are the process behind discovery. This piece designs an experiment from scratch, asking whether resistance training makes runners faster, then leans on a literature review to show why even a huge, deliberately unrealistic study would struggle to answer it. A study designed, not run.`},{id:`science-connections`,outcome:`Science Connections`,group:`science`,title:`Disease Literacy Lab`,url:`https://migriv24.github.io/bi103-disease-lab/`,placeholder:!1,accent:`#4d96ff`,previewBg:`linear-gradient(135deg, #3a1020 0%, #501828 100%)`,svg:`<svg viewBox="0 0 100 70" fill="none" xmlns="http://www.w3.org/2000/svg">
       <circle cx="50" cy="35" r="22" stroke="currentColor" stroke-width="2" opacity="0.75"/>
       <circle cx="50" cy="35" r="13" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
       <circle cx="50" cy="35" r="6" fill="currentColor" opacity="0.35"/>
