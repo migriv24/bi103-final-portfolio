@@ -48,7 +48,7 @@
       <rect x="60" y="56" width="22" height="9"  rx="2" fill="currentColor" opacity="0.4"/>
       <circle cx="24" cy="30" r="4" fill="currentColor" opacity="0.55"/>
       <circle cx="76" cy="24" r="4" fill="currentColor" opacity="0.55"/>
-    </svg>`,caption:`Biology is most meaningful when personal. This game turns the digestive system into a daily experience the player can feel, connecting biological knowledge to lived life in a way that sticks beyond the classroom.`},{id:`human-concepts`,outcome:`Human Biology Concepts`,group:`human`,title:`Infectious Diseases Lab`,url:`#`,placeholder:!0,accent:`#ff6b6b`,previewBg:`linear-gradient(135deg, #4a1010 0%, #601818 100%)`,svg:`<svg viewBox="0 0 100 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+    </svg>`,caption:`Biology is most meaningful when personal. This game turns the digestive system into a daily experience the player can feel, connecting biological knowledge to lived life in a way that sticks beyond the classroom.`},{id:`human-concepts`,outcome:`Human Biology Concepts`,group:`human`,title:`Infectious Diseases Lab`,url:`https://migriv24.github.io/bi103-infectious-disease-lab/`,placeholder:!1,accent:`#ff6b6b`,previewBg:`linear-gradient(135deg, #4a1010 0%, #601818 100%)`,svg:`<svg viewBox="0 0 100 70" fill="none" xmlns="http://www.w3.org/2000/svg">
       <circle cx="50" cy="35" r="8"  fill="currentColor" opacity="0.9"/>
       <circle cx="22" cy="18" r="5"  fill="currentColor" opacity="0.7"/>
       <circle cx="78" cy="18" r="5"  fill="currentColor" opacity="0.7"/>
@@ -62,14 +62,14 @@
       <circle cx="90" cy="10" r="3" fill="currentColor" opacity="0.4"/>
       <circle cx="6"  cy="62" r="3" fill="currentColor" opacity="0.4"/>
       <circle cx="94" cy="62" r="3" fill="currentColor" opacity="0.4"/>
-    </svg>`,caption:`Human populations are biological systems too. This lab models infectious disease spread using epidemiological frameworks, exploring transmission rate, R₀, and herd immunity to understand how our species responds to biological threats at scale.`},{id:`human-skills`,outcome:`Human Skills`,group:`human`,title:`Data Management Lab`,url:`https://migriv24.github.io/bi103-datamgmt-lab/`,placeholder:!1,accent:`#ff6b6b`,previewBg:`linear-gradient(135deg, #2a1050 0%, #381860 100%)`,svg:`<svg viewBox="0 0 100 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+    </svg>`,caption:`Some diseases never left, even as the world moved on. This piece documents two of them as they stand in 2026, a parasite (malaria) and a pathogen (tuberculosis), tracing how each one spreads, what it does to the body, and where prevention and treatment stand. It turns the biology of infection into a field dossier on living alongside disease.`},{id:`human-skills`,outcome:`Human Skills`,group:`human`,title:`Data Management Lab`,url:`https://migriv24.github.io/bi103-datamgmt-lab/`,placeholder:!1,accent:`#ff6b6b`,previewBg:`linear-gradient(135deg, #2a1050 0%, #381860 100%)`,svg:`<svg viewBox="0 0 100 70" fill="none" xmlns="http://www.w3.org/2000/svg">
       <line x1="13" y1="64" x2="90" y2="64" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
       <line x1="13" y1="10" x2="13" y2="64" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
       <rect x="20" y="44" width="12" height="20" rx="2" fill="currentColor" opacity="0.9"/>
       <rect x="38" y="28" width="12" height="36" rx="2" fill="currentColor" opacity="0.9"/>
       <rect x="56" y="36" width="12" height="28" rx="2" fill="currentColor" opacity="0.7"/>
       <rect x="74" y="16" width="12" height="48" rx="2" fill="currentColor" opacity="0.9"/>
-    </svg>`,caption:`Researching humans requires both technical skill and ethical care. This lab covers data collection methods, validation practices, and the principles of informed consent and privacy that govern responsible human biological research.`},{id:`human-connections`,outcome:`Human Connections`,group:`human`,title:`Body Data Visualization`,url:`#`,placeholder:!0,accent:`#ff6b6b`,previewBg:`linear-gradient(135deg, #1a2040 0%, #20284e 100%)`,svg:`<svg viewBox="0 0 100 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+    </svg>`,caption:`Researching humans requires both technical skill and ethical care. This lab covers data collection methods, validation practices, and the principles of informed consent and privacy that govern responsible human biological research.`},{id:`human-connections`,outcome:`Human Connections`,group:`human`,title:`Body Data Visualization`,url:`https://migriv24.github.io/bi103-bodyviz-lab/`,placeholder:!1,accent:`#ff6b6b`,previewBg:`linear-gradient(135deg, #1a2040 0%, #20284e 100%)`,svg:`<svg viewBox="0 0 100 70" fill="none" xmlns="http://www.w3.org/2000/svg">
       <polyline points="8,58 22,42 38,50 54,26 70,34 90,18" stroke="currentColor" stroke-width="2.5" fill="none" opacity="0.9" stroke-linecap="round" stroke-linejoin="round"/>
       <polyline points="8,64 28,54 46,60 62,46 78,52 90,40" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.45" stroke-linecap="round" stroke-linejoin="round"/>
       <circle cx="8"  cy="58" r="3" fill="currentColor" opacity="0.8"/>
